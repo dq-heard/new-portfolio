@@ -1,0 +1,207 @@
+.projects {
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+
+  .section-subtitle {
+    margin-bottom: var(--mrg-1-5);
+  }
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .project-card {
+      width: 270px;
+      flex-direction: column;
+
+      margin: 2rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: var(--container-color);
+
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--input-color);
+        box-shadow: 0 0 25px var(--title-color);
+      }
+
+      @media screen and (min-width: 2000px) {
+        width: 470px;
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+      }
+
+      @media screen and (max-width: 300px) {
+        width: 100%;
+        margin: 1rem;
+      }
+
+      .project-img {
+        width: 100%;
+        height: 230px;
+
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0.5rem;
+          object-fit: cover;
+        }
+
+        @media screen and (min-width: 2000px) {
+          height: 350px;
+        }
+
+        .project-links {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+
+          border-radius: 0.5rem;
+          opacity: 0;
+          transition: all 0.3s ease;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          div {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--first-color);
+            color: #fff;
+
+            margin: 1rem;
+            font-family: var(--font-base);
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: var(--first-color-alt);
+            }
+
+            svg {
+              width: 50%;
+              height: 50%;
+              color: var(--white-color);
+            }
+          }
+        }
+      }
+
+      .project-text {
+        padding: 0.5rem;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+
+        h4 {
+          font-size: 1rem;
+          line-height: 1.5;
+          margin-top: 1rem;
+          color: var(--title-color);
+
+          @media screen and (min-width: 2000px) {
+            margin-top: 3rem;
+            font-size: 2rem;
+          }
+
+          @media screen and (max-width: 450px) {
+            font-size: 0.9rem;
+          }
+        }
+
+        p {
+          color: var(--text-color);
+          font-size: 0.8rem;
+
+          line-height: 1.5;
+
+          @media screen and (min-width: 2000px) {
+            font-size: 1.75rem;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination-controls {
+    text-align: center;
+    margin-top: var(--mrg-1);
+
+    button {
+      background: none;
+      border: none;
+      font: inherit;
+
+      color: var(--first-color);
+
+      &:disabled {
+        color: var(--first-color-lighter);
+      }
+
+      .arrow {
+        padding-top: var(--mrg-0-25);
+      }
+
+      .arrow-left {
+        padding-right: var(--mrg-0-25);
+      }
+
+      .arrow-right {
+        padding-left: var(--mrg-0-25);
+      }
+    }
+
+    span {
+      padding: 0 var(--mrg-1);
+    }
+  }
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .projects {
+    &.section {
+      padding-top: 2rem;
+      height: 120vh;
+    }
+
+    .section-subtitle {
+      margin-bottom: 0rem;
+    }
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .projects {
+    &.section {
+      padding-top: 3rem;
+      height: 100vh;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects {
+    &.section {
+      padding-top: 7rem;
+    }
+  }
+}

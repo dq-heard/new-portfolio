@@ -1,0 +1,110 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --header-height: 3rem;
+  --logo: url("./assets/short-signature.png");
+  --header-color: rgba(255, 255, 255, 0.4);
+  --header-border: rgba(255, 255, 255, 0.18);
+  --h1: url("./assets/full-signature.png");
+
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --primary-color: 31;
+  --secondary-color: 220;
+
+  /* HSL color mode */
+  --first-color: hsl(var(--primary-color), 100%, 50%);
+  --first-color-second: hsl(var(--primary-color), 80%, 50%);
+  --first-color-alt: hsl(var(--primary-color), 100%, 63%);
+  --first-color-lighter: hsl(var(--primary-color), 100%, 78%);
+  --title-color: hsl(var(--primary-color), 8%, 30%);
+  --text-color: hsl(var(--primary-color), 8%, 45%);
+  --text-color-light: hsl(var(--primary-color), 8%, 65%);
+  --input-color: hsl(var(--primary-color), 70%, 90%);
+  --body-color: hsl(var(--primary-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--primary-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--primary-color), 12%, 80%);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margins ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mrg-0-25: 0.25rem;
+  --mrg-0-5: 0.5rem;
+  --mrg-0-75: 0.75rem;
+  --mrg-1: 1rem;
+  --mrg-1-5: 1.5rem;
+  --mrg-2: 2rem;
+  --mrg-2-5: 2.5rem;
+  --mrg-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 768px) {
+  :root {
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*========== Dark Theme ==========*/
+body.dark-mode {
+  --logo: url("./assets/short-signature(2).png");
+  --header-color: rgba(51, 51, 51, 0.7);
+  --header-border: rgba(51, 51, 51, 0.18);
+  --h1: url("./assets/full-signature(2).png");
+
+  /* HSL color mode */
+  --title-color: hsl(var(--secondary-color), 8%, 95%);
+  --text-color: hsl(var(--secondary-color), 8%, 85%);
+  --input-color: hsl(var(--primary-color), 8%, 65%);
+  --body-color: hsl(var(--secondary-color), 0%, 20%);
+  --container-color: hsl(var(--secondary-color), 2%, 35%);
+  --scroll-bar-color: hsl(var(--secondary-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--secondary-color), 12%, 36%);
+}

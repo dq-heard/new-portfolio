@@ -1,0 +1,214 @@
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+main {
+  background-image: url("./assets/paven.png");
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mrg-0-5);
+}
+
+.section-subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mrg-3);
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.socials-icon {
+  font-size: 1.5em;
+  color: var(--first-color);
+}
+
+.socials-icon:hover {
+  color: var(--first-color-alt);
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 768px;
+  margin-left: var(--mrg-1-5);
+  margin-right: var(--mrg-1-5);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*==================== BUTTONS ====================*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button-icon {
+  font-size: 1.25em;
+  margin-left: var(--mrg-0-5);
+  transition: 0.3s;
+}
+
+.button-alt {
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
+.button-alt:hover {
+  background-color: var(--input-color);
+}
+
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button-small {
+  padding: 0.75rem 1rem;
+}
+
+.button-title {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-left: var(--mrg-0-5);
+  margin-right: var(--mrg-0-5);
+}
+
+.button-link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
+
+button[type=submit] {
+  background-color: var(--first-color);
+  color: #fff;
+  border: none;
+  font-size: 1.1em;
+  font-weight: var(--font-medium);
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mrg-1);
+    margin-right: var(--mrg-1);
+  }
+}
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .main {
+    padding: 0 var(--mrg-1);
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section {
+    height: 88vh;
+    padding: 4rem 0 2rem;
+  }
+  .section-title {
+    padding-top: 4rem;
+  }
+}
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 106%;
+  }
+  .main {
+    padding: 0;
+  }
+}/*# sourceMappingURL=App.css.map */

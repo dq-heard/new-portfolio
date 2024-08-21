@@ -1,0 +1,118 @@
+.resume {
+  margin-top: var(--mrg-1);
+  text-align: center;
+  font-size: large;
+}
+@media screen and (min-width: 1440px) {
+  .resume.section {
+    padding-top: 12rem;
+  }
+}
+.resume .resume-bg {
+  background-color: var(--first-color-second);
+  padding-top: var(--mrg-1-5);
+  padding-bottom: 4.5rem;
+}
+.resume .resume-bg .resume-container .resume-data .resume-title,
+.resume .resume-bg .resume-container .resume-data .resume-subtitle,
+.resume .resume-bg .resume-container .resume-data .resume-desc {
+  color: #fff;
+}
+.resume .resume-bg .resume-container .resume-data .resume-title {
+  margin-top: var(--mrg-1);
+  margin-bottom: var(--mrg-0-5);
+}
+.resume .resume-bg .resume-container .resume-data .resume-subtitle {
+  margin-bottom: var(--mrg-3);
+}
+.resume .resume-bg .resume-container .resume-data .resume-desc {
+  display: none;
+  margin: 0 auto;
+}
+.resume .resume-bg .resume-container .resume-data .resume-button {
+  display: flex;
+  justify-content: center;
+}
+.resume .resume-bg .resume-container .resume-img {
+  width: 232px;
+  justify-self: center;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .resume .resume-bg .resume-container .resume-img {
+    width: 200px;
+  }
+}
+/* For medium devices */
+@media screen and (min-width: 568px) {
+  .resume .resume-bg {
+    padding-bottom: var(--mrg-2);
+  }
+  .resume .resume-bg .resume-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .resume .resume-bg .resume-container .resume-data .resume-subtitle {
+    margin-bottom: var(--mrg-0-75);
+  }
+  .resume .resume-bg .resume-container .resume-data .resume-desc {
+    display: block;
+    margin-bottom: var(--mrg-1-5);
+    width: 250px;
+  }
+  .resume .resume-bg .resume-container .resume-img {
+    padding-top: var(--mrg-1-5);
+  }
+}
+@media screen and (min-width: 768px) {
+  .resume {
+    text-align: initial;
+  }
+  .resume.section {
+    padding-top: 3.5rem;
+    height: 92vh;
+  }
+  .resume .resume-bg {
+    background: none;
+  }
+  .resume .resume-bg .resume-container {
+    background-color: var(--first-color-second);
+    border-radius: 1rem;
+    padding: 3rem 2.5rem 0;
+    grid-template-columns: 1fr max-content;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+  .resume .resume-bg .resume-container .resume-data {
+    padding-top: 0.8rem;
+  }
+  .resume .resume-bg .resume-container .resume-data .resume-title {
+    margin-top: 0;
+  }
+  .resume .resume-bg .resume-container .resume-data .resume-desc {
+    margin-left: 0;
+  }
+  .resume .resume-bg .resume-container .resume-data .resume-button {
+    justify-content: flex-start;
+  }
+  .resume .resume-bg .resume-container .resume-img {
+    margin-top: -1rem;
+    padding: 0 0 3rem;
+    width: 320px;
+  }
+}
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .resume.section {
+    padding-top: 7rem;
+  }
+  .resume .resume-bg .resume-container .resume-data .resume-desc {
+    width: 260px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .resume.section {
+    padding-top: 12rem;
+  }
+}/*# sourceMappingURL=Resume.css.map */

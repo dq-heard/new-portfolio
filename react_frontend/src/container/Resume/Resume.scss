@@ -1,0 +1,154 @@
+.resume {
+  margin-top: var(--mrg-1);
+  text-align: center;
+  font-size: large;
+
+  @media screen and (min-width: 1440px) {
+    &.section {
+      padding-top: 12rem;
+    }
+  }
+
+  .resume-bg {
+    background-color: var(--first-color-second);
+    padding-top: var(--mrg-1-5);
+    padding-bottom: 4.5rem;
+
+    .resume-container {
+      .resume-data {
+        .resume-title,
+        .resume-subtitle,
+        .resume-desc {
+          color: #fff;
+        }
+
+        .resume-title {
+          margin-top: var(--mrg-1);
+          margin-bottom: var(--mrg-0-5);
+        }
+
+        .resume-subtitle {
+          margin-bottom: var(--mrg-3);
+        }
+
+        .resume-desc {
+          display: none;
+          margin: 0 auto;
+        }
+
+        .resume-button {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .resume-img {
+        width: 232px;
+        justify-self: center;
+      }
+    }
+  }
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .resume .resume-bg .resume-container .resume-img {
+    width: 200px;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+  .resume {
+    .resume-bg {
+      padding-bottom: var(--mrg-2);
+
+      .resume-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        .resume-data {
+          .resume-subtitle {
+            margin-bottom: var(--mrg-0-75);
+          }
+
+          .resume-desc {
+            display: block;
+            margin-bottom: var(--mrg-1-5);
+            width: 250px;
+          }
+        }
+
+        .resume-img {
+          padding-top: var(--mrg-1-5);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .resume {
+    text-align: initial;
+
+    &.section {
+      padding-top: 3.5rem;
+      height: 92vh;
+    }
+
+    .resume-bg {
+      background: none;
+
+      .resume-container {
+        background-color: var(--first-color-second);
+        border-radius: 1rem;
+        padding: 3rem 2.5rem 0;
+        grid-template-columns: 1fr max-content;
+        column-gap: 3rem;
+
+        .resume-data {
+          padding-top: 0.8rem;
+
+          .resume-title {
+            margin-top: 0;
+          }
+
+          .resume-desc {
+            margin-left: 0;
+          }
+
+          .resume-button {
+            justify-content: flex-start;
+          }
+        }
+
+        .resume-img {
+          margin-top: -1rem;
+          padding: 0 0 3rem;
+          width: 320px;
+        }
+      }
+    }
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .resume {
+    &.section {
+      padding-top: 7rem;
+    }
+
+    .resume-bg .resume-container .resume-data .resume-desc {
+      width: 260px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .resume {
+    &.section {
+      padding-top: 12rem;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+.projects {
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+.projects .section-subtitle {
+  margin-bottom: var(--mrg-1-5);
+}
+.projects .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.projects .project-container .project-card {
+  width: 270px;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--container-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.projects .project-container .project-card:hover {
+  background-color: var(--input-color);
+  box-shadow: 0 0 25px var(--title-color);
+}
+@media screen and (min-width: 2000px) {
+  .projects .project-container .project-card {
+    width: 470px;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .projects .project-container .project-card {
+    width: 100%;
+    margin: 1rem;
+  }
+}
+.projects .project-container .project-card .project-img {
+  width: 100%;
+  height: 230px;
+  position: relative;
+}
+.projects .project-container .project-card .project-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 2000px) {
+  .projects .project-container .project-card .project-img {
+    height: 350px;
+  }
+}
+.projects .project-container .project-card .project-img .project-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.projects .project-container .project-card .project-img .project-links:hover {
+  opacity: 1;
+}
+.projects .project-container .project-card .project-img .project-links div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  color: #fff;
+  margin: 1rem;
+  font-family: var(--font-base);
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.projects .project-container .project-card .project-img .project-links div:hover {
+  background-color: var(--first-color-alt);
+}
+.projects .project-container .project-card .project-img .project-links div svg {
+  width: 50%;
+  height: 50%;
+  color: var(--white-color);
+}
+.projects .project-container .project-card .project-text {
+  padding: 0.5rem;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+}
+.projects .project-container .project-card .project-text h4 {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  color: var(--title-color);
+}
+@media screen and (min-width: 2000px) {
+  .projects .project-container .project-card .project-text h4 {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .projects .project-container .project-card .project-text h4 {
+    font-size: 0.9rem;
+  }
+}
+.projects .project-container .project-card .project-text p {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 2000px) {
+  .projects .project-container .project-card .project-text p {
+    font-size: 1.75rem;
+  }
+}
+.projects .pagination-controls {
+  text-align: center;
+  margin-top: var(--mrg-1);
+}
+.projects .pagination-controls button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: var(--first-color);
+}
+.projects .pagination-controls button:disabled {
+  color: var(--first-color-lighter);
+}
+.projects .pagination-controls button .arrow {
+  padding-top: var(--mrg-0-25);
+}
+.projects .pagination-controls button .arrow-left {
+  padding-right: var(--mrg-0-25);
+}
+.projects .pagination-controls button .arrow-right {
+  padding-left: var(--mrg-0-25);
+}
+.projects .pagination-controls span {
+  padding: 0 var(--mrg-1);
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .projects.section {
+    padding-top: 2rem;
+    height: 120vh;
+  }
+  .projects .section-subtitle {
+    margin-bottom: 0rem;
+  }
+}
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .projects.section {
+    padding-top: 3rem;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects.section {
+    padding-top: 7rem;
+  }
+}/*# sourceMappingURL=Projects.css.map */
