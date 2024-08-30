@@ -217,12 +217,10 @@
     }
 
     &.section {
-      padding-top: 0;
+      padding-top: 20rem;
     }
 
     .home-container {
-      padding-top: 8rem;
-
       .home-content {
         grid-template-columns: 1.5fr 1fr max-content;
         align-items: center;
@@ -263,9 +261,8 @@
 @media screen and (min-width: 1024px) {
   .home {
     &.section {
-      padding-top: 2rem;
+      padding-top: 14rem;
     }
-
     .home-container {
       width: 996px;
 
@@ -293,7 +290,7 @@
 @media screen and (min-width: 1440px) {
   .home {
     &.section {
-      padding-top: 8rem;
+      padding-top: 12rem;
     }
   }
 }

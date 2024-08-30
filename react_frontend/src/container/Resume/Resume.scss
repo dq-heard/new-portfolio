@@ -92,7 +92,7 @@
     text-align: initial;
 
     &.section {
-      padding-top: 3.5rem;
+      padding-top: 20rem;
       height: 92vh;
     }
 
@@ -136,7 +136,7 @@
 @media screen and (min-width: 1024px) {
   .resume {
     &.section {
-      padding-top: 7rem;
+      padding-top: 10rem;
     }
 
     .resume-bg .resume-container .resume-data .resume-desc {
@@ -148,7 +148,7 @@
 @media screen and (min-width: 1440px) {
   .resume {
     &.section {
-      padding-top: 12rem;
+      padding-top: 14rem;
     }
   }
 }

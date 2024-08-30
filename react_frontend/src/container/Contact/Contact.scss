@@ -145,7 +145,7 @@
 @media screen and (min-width: 768px) {
   .contact {
     &.section {
-      padding-top: 2rem;
+      padding-top: 10rem;
       height: 145vh;
     }
 
@@ -165,7 +165,8 @@
 /* For large devices */
 @media screen and (min-width: 1024px) {
   .contact.section {
-    height: 120vh;
+    height: 110vh;
+    padding-top: 4rem;
   }
 }
 
